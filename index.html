@@ -135,13 +135,9 @@
             display: flex
         }
 
-        @media (max-width:350px) {
-            .header {
-                padding: 7px 10px
-            }
-
-            .planet__div_per+.event__btn__container{
-                margin-top: 200px !important;
+        @media (max-width:390px) {
+            .planet__div_per+.event__btn__container {
+                margin-top: 260px !important;
             }
         }
 
@@ -479,6 +475,28 @@
 
         .homeModal {
             contain-intrinsic-size: 600px 400px
+        }
+
+         @media (max-width:350px) {
+            .header {
+                padding: 7px 10px
+            }
+
+            .event__list__item__left {
+                min-width: 70px;
+            }
+
+            .event__list__item__text {
+                font-size: clamp(10px, 3.4vw, 12px);
+            }
+
+            .event__list__item__left {
+                padding: 0px;
+                gap: 0px;
+            }
+            .event__list__item__left {
+                height: 95%;
+            }
         }
     </style>
 </head>
